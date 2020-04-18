@@ -1,0 +1,38 @@
+@import 'https://kognise.github.io/water.css/dist/dark.css';
+
+:root {
+  --deckgo-highlight-code-scroll: hidden;
+  --text-muted: rgba(256, 256, 256, 0.2);
+}
+
+kbd {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 0;
+
+  a {
+    display: block;
+    padding: 10px;
+  }
+}
+
+.header nav a {
+  color: white;
+  float: right;
+  padding: 14px 16px;
+  text-align: left;
+  text-align: center;
+  text-decoration: none;
+
+  &:first-child {
+    display: inline-block;
+    float: none;
+    font-weight: bold;
+    padding-left: 0;
+  }
+}
+
+.anchor.before {
+  fill: white;
+}
