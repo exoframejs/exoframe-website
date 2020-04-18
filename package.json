@@ -9,9 +9,10 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
-    "start": "gatsby develop",
-    "fix": "prettier --write 'src/**/*.{ts,tsx,scss,md}' && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss' "
+    "build": "gatsby clean && gatsby build",
+    "start": "gatsby clean && gatsby develop",
+    "fix": "prettier --write 'src/**/*.{ts,tsx,scss,md}' && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss'",
+    "lint": "tslint 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint 'src/**/*.scss'"
   },
   "devDependencies": {
     "@deckdeckgo/highlight-code": "^1.0.2",

@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Exoframe Docs`
+    title: `Exoframe Docs`,
+    start_url: '/'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -15,7 +16,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/contents`,
         name: 'pages'
       }
     },

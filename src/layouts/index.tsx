@@ -13,8 +13,9 @@ class Header extends React.PureComponent<{}> {
           <Link to="/">
             <img alt="exoframe" src="https://github.com/exoframejs/exoframe/raw/master/logo/png/exo_white.png" style={{ width: '100px' }} />
           </Link>
-          <Link to="/categories">Categories</Link>
           <Link to="/tags">Tags</Link>
+          <Link to="/categories">Categories</Link>
+          <Link to="/docs">Docs</Link>
         </nav>
       </div>
     );

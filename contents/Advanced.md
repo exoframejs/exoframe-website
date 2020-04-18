@@ -3,7 +3,7 @@ path: '/docs/advanced'
 date: '2020-05-17T10:10:00Z'
 title: 'Advanced topics'
 categories: ['exoframe']
-tags: ['exoframe', 'traefik]
+tags: ['exoframe', 'traefik']
 excerpt: 'Since Traefik supports routing requests to specific path, you can also do that with Exoframe.'
 ---
 
