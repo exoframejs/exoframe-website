@@ -11,7 +11,7 @@ excerpt: 'Pull and run Exoframe server using docker'
 
 ## Installation and Usage
 
-### Automatic installation
+### Guided installation
 ```
 bash -c "$(curl -fsSL https://raw.github.com/exoframejs/exoframe-server/master/tools/install.sh)"
 ```
