@@ -1,18 +1,21 @@
 {
   "name": "exoframe-website",
-  "description": "",
+  "description": "Exoframe documentation website",
   "version": "1.0.0",
   "author": "",
   "keywords": [
     "exoframe"
   ],
   "license": "MIT",
-  "main": "n/a",
+  "private": true,
   "scripts": {
-    "build": "gatsby clean && gatsby build",
-    "start": "gatsby clean && gatsby develop",
-    "fix": "prettier --write 'src/**/*.{ts,tsx,scss,md}' && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss'",
-    "lint": "tslint 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint 'src/**/*.scss'"
+    "start": "yarn develop",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "lint:fix": "prettier --write 'src/**/*.{ts,tsx,scss,md}' && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss'",
+    "lint:styles": "stylelint 'src/**/*.scss'",
+    "lint:code": "tslint 'src/**/*.{ts,tsx}' -p tsconfig.json",
+    "lint": "yarn lint:code"
   },
   "devDependencies": {
     "@deckdeckgo/highlight-code": "^1.0.2",
