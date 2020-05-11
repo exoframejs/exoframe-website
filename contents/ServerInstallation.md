@@ -11,6 +11,19 @@ excerpt: 'Pull and run Exoframe server using docker'
 
 ## Installation and Usage
 
+### Guided installation
+```
+bash -c "$(curl -fsSL https://raw.github.com/exoframejs/exoframe-server/master/tools/install.sh)"
+```
+Available parameters:
+```
+-D, --dry-run     Dry run. Print command instead of executing it.
+-e, --email       Enter email to enable SSL support.
+-d, --domain      Enter exoframe-server domain.
+-p, --password    Enter your private key used for JWT encryption.
+```
+
+### Manual installation
 1.  Make sure you have Docker [installed and running](https://docs.docker.com/engine/installation/) on your host.
 2.  Pull and run Exoframe server using docker:
 
